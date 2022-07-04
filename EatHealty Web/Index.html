@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/main.css">
+
+</head>
+
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching Now...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+            <header>
+                <a href="#">Yummy.Eats</a>
+            </header>
+            <h1><span>The Healthy </span> Eating Experience</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, tempore?</p>
+
+            <div class="form-container">
+                <form action="">
+                    <div class="form-left">
+                        <label for="city">Enter Your City: </label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "San Diego"</p>
+                    </div>
+                    <input type="button" value="Find Food Now" id="cta-btn">
+                </form>
+            </div>
+        </section>
+
+        <section class="bottom">
+
+        </section>
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quo saepe dolorum veritatis
+                corrupti, facere labore quidem temporibus sequi voluptate aperiam repellat atque. Inventore, numquam
+                ab magnam enim hic totam vel porro animi impedit facere quaerat deleniti officia consequuntur, dicta
+                molestias. Veniam consequatur rerum molestias eaque voluptates obcaecati vitae tenetur quisquam
+                laboriosam, consequuntur iusto distinctio possimus omnis fugit rem enim?</p>
+        </div>
+        <img src="Images\Food.jpg" alt="Food ">
+    </section>
+
+    <script>
+        let btn = document.getElementById("cta-btn");
+        let overlay = document.getElementById("overlay");
+
+        btn.addEventListener("click", () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add("animate-overlay")
+        })
+    </script>
+</body>
+
+</html>
